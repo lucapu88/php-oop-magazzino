@@ -12,7 +12,7 @@ class Scarpe {
   public function stampaScarpe() {
     echo 'marca: ' . $this->marca . '<br>';
     echo 'taglia: ' . $this->taglia . '<br>';
-    echo 'prezzo: ' . $this->prezzo . '<br>';
+    echo 'prezzo: ' . $this->prezzo . '€' . '<br>';
   }
   public function stampaSconto($scontoPercentuale) {
     $sconto = $this->prezzo * $scontoPercentuale / 100;

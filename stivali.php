@@ -1,12 +1,14 @@
 <?php
 include_once 'scarpe.php';
 class Stivali extends Scarpe {
-  public $modello;
+  public $stile;
 
-  public function __construct($_marca, $_taglia, $_prezzo, $_modello) {
+  public function __construct($_marca, $_taglia, $_prezzo, $_stile) {
     parent::__construct($_marca, $_taglia, $_prezzo);
-    $this->modello = $_modello;
+    $this->stile = $_stile;
   }
-
+  public function stampaStile() {
+    echo 'stile: ' . $this->stile . '<br>';
+  }
 }
  ?>

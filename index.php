@@ -6,22 +6,20 @@ include_once  'stivali.php';
 include_once  'ciabatte.php';
 
 $scarpa = new Scarpe('nike', 44, 150);
-echo '<pre>';
-var_dump($scarpa);
+$scarpa->stampaScarpe();
 echo "sconto del 25%: " . $scarpa->stampaSconto(25) . '€';
-echo '</pre>';
-
+echo "<br>";
+echo "<br>";
 $stivale = new Stivali('timberland', 45, 250, 'alti');
-//$stivale->stampaScarpe();
-echo '<pre>';
-var_dump($stivale);
+$stivale->stampaScarpe();
+$stivale->stampaStile();
 echo "sconto del 30%: " . $stivale->stampaSconto(30) . '€';
-echo '</pre>';
-
+echo "<br>";
+echo "<br>";
 $ciabatta = new Ciabatte('crocs', 39, 50, 'estive');
-echo '<pre>';
-var_dump($ciabatta);
+$ciabatta->stampaScarpe();
+$ciabatta->stampaStagione();
 echo "sconto del 50%: " . $ciabatta->stampaSconto(50) . '€';
-echo '</pre>';
+
 
  ?>

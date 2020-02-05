@@ -6,6 +6,9 @@ class Ciabatte extends Scarpe {
     parent::__construct($_marca, $_taglia, $_prezzo);
     $this->stagione = $stagione;
   }
+  public function stampaStagione() {
+    echo 'stagione: ' . $this->stagione . '<br>';
+  }
 
 }
  ?>
