@@ -7,10 +7,6 @@ class Stivali extends Scarpe {
     parent::__construct($_marca, $_taglia, $_prezzo);
     $this->modello = $_modello;
   }
-  // public function stampaSconto($scontoPercentuale) {
-  //   $sconto = $this->prezzo * $scontoPercentuale / 100;
-  //       $totalePrezzo = $this->prezzo - $sconto;
-  //       return $totalePrezzo;
-  // }
+
 }
  ?>
