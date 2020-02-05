@@ -3,7 +3,7 @@ A voi piena scelta sulla tipologia di prodotti e sulle funzioni da inserire, l'i
 <?php
 include_once  'scarpe.php';
 include_once  'stivali.php';
-//include_once  'ciabatte.php';
+include_once  'ciabatte.php';
 
 $scarpa = new Scarpe('nike', 44, 150);
 echo '<pre>';
@@ -15,13 +15,9 @@ echo '<pre>';
 var_dump($stivale);
 echo '</pre>';
 
-// $ciabatta = new Ciabatte();
-// $ciabatta->marca = 'crocs';
-// $ciabatta->taglia = '45';
-// $ciabatta->prezzo = '80';
-// // $ciabatta->modello = 'alto';
-// $ciabatta->stagione = 'estiva';
-// echo '<pre>';
-// var_dump($ciabatta);
-// echo '</pre>';
+$ciabatta = new Ciabatte('crocs', 39, 50, 'estive');
+echo '<pre>';
+var_dump($ciabatta);
+echo '</pre>';
+
  ?>
