@@ -8,19 +8,20 @@ include_once  'ciabatte.php';
 $scarpa = new Scarpe('nike', 44, 150);
 echo '<pre>';
 var_dump($scarpa);
+echo "sconto del 25%: " . $scarpa->stampaSconto(25) . '€';
 echo '</pre>';
-echo "sconto del 25%: " . $scarpa->stampaSconto(25);
 
 $stivale = new Stivali('timberland', 45, 250, 'alti');
 //$stivale->stampaScarpe();
 echo '<pre>';
 var_dump($stivale);
+echo "sconto del 30%: " . $stivale->stampaSconto(30) . '€';
 echo '</pre>';
-echo "sconto del 30%: " . $stivale->stampaSconto(30);
 
 $ciabatta = new Ciabatte('crocs', 39, 50, 'estive');
 echo '<pre>';
 var_dump($ciabatta);
+echo "sconto del 50%: " . $ciabatta->stampaSconto(50) . '€';
 echo '</pre>';
-echo "sconto del 50%: " . $ciabatta->stampaSconto(50);
+
  ?>
